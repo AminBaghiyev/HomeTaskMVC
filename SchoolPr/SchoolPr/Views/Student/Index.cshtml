@@ -1,0 +1,26 @@
+﻿@using SchoolPr.Models;
+@model List<Student>;
+
+<table class="table table-dark table-striped text-center"
+    style="max-width: 600px"
+>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>GroupID</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in @Model)
+        {
+            <tr>
+                <td>@student.Id</td>
+                <td>@student.FirstName</td>
+                <td>@student.LastName</td>
+                <td>@student.GroupId</td>
+            </tr>
+        }
+    </tbody>
+</table>
