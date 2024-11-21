@@ -1,4 +1,8 @@
-﻿    <!-- Start Banner Hero -->
+﻿@using PurpleBuzzPr.ViewsModel.About;
+@using PurpleBuzzPr.Models;
+@model AboutVM;
+
+<!-- Start Banner Hero -->
 <section class="bg-light w-100">
     <div class="container">
         <div class="row d-flex align-items-center py-5">
@@ -28,27 +32,20 @@
         </div>
 
         <div class="col-lg-9 row">
-            <div class="team-member col-md-4">
-                <img class="team-member-img img-fluid rounded-circle p-4" src="~/img/team-01.jpg" alt="Card image">
-                <ul class="team-member-caption list-unstyled text-center pt-4 text-muted light-300">
-                    <li>John Doe</li>
-                    <li>Business Development</li>
-                </ul>
-            </div>
-            <div class="team-member col-md-4">
-                <img class="team-member-img img-fluid rounded-circle p-4" src="~/img/team-02.jpg" alt="Card image">
-                <ul class="team-member-caption list-unstyled text-center pt-4 text-muted light-300">
-                    <li>Jane Doe</li>
-                    <li>Media Development</li>
-                </ul>
-            </div>
-            <div class="team-member col-md-4">
-                <img class="team-member-img img-fluid rounded-circle p-4" src="~/img/team-03.jpg" alt="Card image">
-                <ul class="team-member-caption list-unstyled text-center pt-4 text-muted light-300">
-                    <li>Sam</li>
-                    <li>Developer</li>
-                </ul>
-            </div>
+            @if (@Model.TeamMembers.Count() == 0)
+            {
+                <a class="link-info text-center" asp-controller="About" asp-action="AddTeamMember">Please click here to add team member!</a>
+            }
+            @foreach (TeamMember teamMember in @Model.TeamMembers)
+            {
+                <div class="team-member col-md-4">
+                    <img class="team-member-img img-fluid rounded-circle p-4" src="~/img/@teamMember.ImagePath" alt="@teamMember.FullName">
+                    <ul class="team-member-caption list-unstyled text-center pt-4 text-muted light-300">
+                        <li>@teamMember.FullName</li>
+                        <li>@teamMember.JobTitle</li>
+                    </ul>
+                </div>
+            }
         </div>
 
     </div>

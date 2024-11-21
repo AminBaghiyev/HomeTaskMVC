@@ -1,5 +1,12 @@
+using Microsoft.EntityFrameworkCore;
+using PurpleBuzzPr.DAL;
+
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<AppDBContext>(
+    options => options.UseSqlServer(builder.Configuration.GetConnectionString("MsSql")
+));
 builder.Services.AddControllersWithViews();
+
 var app = builder.Build();
 app.UseStaticFiles();
 
