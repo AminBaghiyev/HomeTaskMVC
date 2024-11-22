@@ -7,6 +7,7 @@ namespace PurpleBuzzPr.DAL
     {
         public DbSet<TeamMember> TeamMembers { get; set; }
         public DbSet<ContactMessage> ContactMessages { get; set; }
+        public DbSet<Work> Works { get; set; }
 
         public AppDBContext(DbContextOptions options) : base(options) { }
     }

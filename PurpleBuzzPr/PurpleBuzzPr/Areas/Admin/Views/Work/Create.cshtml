@@ -1,0 +1,23 @@
+﻿@using PurpleBuzzPr.Enums;
+@model Work;
+
+<form asp-action="@(Model.Id == 0 ? "Create" : "Edit")" class="container" method="POST">
+    <h2 class="my-4">@(Model.Id == 0 ? "Add" : "Edit") work</h2>
+    <div class="mb-3">
+        <label class="form-label" asp-for="Title">Title</label>
+        <input class="form-control" asp-for="Title">
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="Description">Description</label>
+        <input class="form-control" asp-for="Description">
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="ThumbnailPath">Thumbnail Path</label>
+        <input class="form-control" asp-for="ThumbnailPath">
+    </div>
+    <div class="mb-3">
+        <label class="form-labelead mr-3" asp-for="Category">Work Category</label>
+        <select style="width: auto" class="custom-select" asp-for="Category" asp-items="Html.GetEnumSelectList<WorkCategory>()"></select>
+    </div>
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+</form>
