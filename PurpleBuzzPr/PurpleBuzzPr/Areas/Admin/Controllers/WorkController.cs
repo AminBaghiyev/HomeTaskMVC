@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using PurpleBuzzPr.DAL;
 using PurpleBuzzPr.Models;
 
@@ -14,16 +15,24 @@ public class WorkController : Controller
         _db = db;
     }
 
-    public IActionResult Index()
+    public async Task<IActionResult> Index()
     {
-        IEnumerable<Work> works = _db.Works;
+        IEnumerable<Work> works = _db.Works.ToList();
+
+        foreach (Work work in works)
+        {
+            work.Service = await _db.Services.FindAsync(work.ServiceId);
+        }
 
         return View(works);
     }
 
     public IActionResult Create()
     {
-        return View(new Work());
+        TempData["services"] = _db.Services.ToList();
+        TempData["categories"] = _db.WorkCategories.ToList();
+
+        return View();
     }
 
     [HttpPost]
@@ -31,8 +40,10 @@ public class WorkController : Controller
     {
         if (!ModelState.IsValid)
         {
-            return BadRequest("Wrong input fields!");
+            return Create();
         }
+
+        work.CreatedAt = DateTime.Now;
 
         await _db.Works.AddAsync(work);
         await _db.SaveChangesAsync();
@@ -45,10 +56,14 @@ public class WorkController : Controller
         Work? work = await _db.Works.FindAsync(id);
         if (work == null)
         {
-            return NotFound();
+            return NotFound("Work not found!");
         }
 
-        return View("Create", work);
+        TempData["services"] = _db.Services.ToList();
+        TempData["categories"] = _db.WorkCategories.ToList();
+        TempData["work"] = work;
+
+        return View("Create");
     }
 
     [HttpPost]
@@ -56,8 +71,17 @@ public class WorkController : Controller
     {
         if(!ModelState.IsValid)
         {
-            return BadRequest("Someting went wrong!");
+            return await Edit(work.Id);
         }
+
+        Work? originalWork = await _db.Works.AsNoTracking().FirstOrDefaultAsync(w => w.Id == work.Id);
+        if (originalWork == null)
+        {
+            return NotFound("Work not found!");
+        }
+
+        work.CreatedAt = originalWork.CreatedAt;
+        work.UpdatedAt = DateTime.Now;
 
         _db.Works.Update(work);
         await _db.SaveChangesAsync();

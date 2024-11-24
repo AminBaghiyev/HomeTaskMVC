@@ -1,6 +1,8 @@
-﻿namespace PurpleBuzzPr.Models;
+﻿using PurpleBuzzPr.Models.Base;
 
-public class TeamMember : BaseEntity
+namespace PurpleBuzzPr.Models;
+
+public class TeamMember : BaseAuditableEntity
 {
     public string Name { get; set; }
     public string Surname { get; set; }

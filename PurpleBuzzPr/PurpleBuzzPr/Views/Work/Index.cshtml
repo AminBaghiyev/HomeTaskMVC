@@ -38,7 +38,7 @@
         }
         @foreach (Work work in Model)
         {
-            <a asp-controller="SingleWork" asp-action="Index" asp-route-id="@work.Id" class="col-sm-6 col-lg-4 text-decoration-none project @work.Category.ToString().ToLower()">
+            <a asp-controller="SingleWork" asp-action="Index" asp-route-id="@work.Id" class="col-sm-6 col-lg-4 text-decoration-none project @work.Category?.Title">
                 <div class="service-work overflow-hidden card mb-5 mx-5 m-sm-0">
                     <img class="card-img-top" src="~/img/@work.ThumbnailPath" alt="@work.Title">
                     <div class="card-body">

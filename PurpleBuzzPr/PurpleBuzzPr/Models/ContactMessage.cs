@@ -1,6 +1,8 @@
-﻿namespace PurpleBuzzPr.Models;
+﻿using PurpleBuzzPr.Models.Base;
 
-public class ContactMessage : BaseEntity
+namespace PurpleBuzzPr.Models;
+
+public class ContactMessage : BaseAuditableEntity
 {
     public string Name { get; set; }
     public string Email { get; set; }

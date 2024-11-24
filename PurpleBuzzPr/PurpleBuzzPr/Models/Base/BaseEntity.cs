@@ -1,4 +1,4 @@
-﻿namespace PurpleBuzzPr.Models;
+﻿namespace PurpleBuzzPr.Models.Base;
 
 public abstract class BaseEntity
 {

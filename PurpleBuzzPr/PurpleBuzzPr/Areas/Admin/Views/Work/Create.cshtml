@@ -1,23 +1,63 @@
-﻿@using PurpleBuzzPr.Enums;
-@model Work;
+﻿@{
+    Work work = TempData["work"] as Work ?? new();
+    SelectList? servicesList = null;
+    SelectList? categoriesList = null;
+    if (TempData["services"] is IEnumerable<Service> services && services.Count() != 0)
+    {
+        servicesList = new(services, nameof(Service.Id), nameof(Service.Title));
+    }
+    if (TempData["categories"] is IEnumerable<WorkCategory> categories && categories.Count() != 0)
+    {
+        servicesList = new(categories, nameof(WorkCategory.Id), nameof(WorkCategory.Title));
+    }
+}
 
-<form asp-action="@(Model.Id == 0 ? "Create" : "Edit")" class="container" method="POST">
-    <h2 class="my-4">@(Model.Id == 0 ? "Add" : "Edit") work</h2>
+<form asp-action=@(work.Id == 0 ? "Create" : "Edit") class="container" method="POST">
+    <h2 class="my-4">@(work.Id == 0 ? "Add" : "Edit") work</h2>
+    <input type="hidden" asp-for=@work.Id />
     <div class="mb-3">
-        <label class="form-label" asp-for="Title">Title</label>
-        <input class="form-control" asp-for="Title">
+        <label class="form-label" asp-for=@work.Title>Title</label>
+        <input class="form-control" asp-for=@work.Title>
+        <span class="text-danger" asp-validation-for=@work.Title></span>
     </div>
     <div class="mb-3">
-        <label class="form-label" asp-for="Description">Description</label>
-        <input class="form-control" asp-for="Description">
+        <label class="form-label" asp-for=@work.Description>Description</label>
+        <input class="form-control" asp-for=@work.Description>
+        <span class="text-danger" asp-validation-for=@work.Description></span>
     </div>
     <div class="mb-3">
-        <label class="form-label" asp-for="ThumbnailPath">Thumbnail Path</label>
-        <input class="form-control" asp-for="ThumbnailPath">
+        <label class="form-label" asp-for=@work.ThumbnailPath>Thumbnail Path</label>
+        <input class="form-control" asp-for=@work.ThumbnailPath>
+        <span class="text-danger" asp-validation-for=@work.ThumbnailPath></span>
     </div>
     <div class="mb-3">
-        <label class="form-labelead mr-3" asp-for="Category">Work Category</label>
-        <select style="width: auto" class="custom-select" asp-for="Category" asp-items="Html.GetEnumSelectList<WorkCategory>()"></select>
+        <label class="form-label" asp-for=@work.Content>Content</label>
+        <textarea class="form-control" asp-for=@work.Content></textarea>
+        <span class="text-danger" asp-validation-for=@work.Content></span>
     </div>
+    @if (servicesList != null)
+    {
+        <div class="mb-3">
+            <label class="form-labelead mr-3" asp-for=@work.ServiceId>Service</label>
+            <select style="width: auto" class="custom-select" asp-for=@work.ServiceId asp-items=servicesList>
+                <option hidden selected value="">Select Service</option>
+            </select>
+            <span class="text-danger" asp-validation-for=@work.ServiceId></span>
+        </div>
+    } else
+    {
+        <p class="text-danger">No service found. Please add service!</p>
+    }
+
+    @if (categoriesList != null)
+    {
+        <div class="mb-3">
+            <label class="form-labelead mr-3" asp-for=@work.CategoryId>Work Category</label>
+            <select style="width: auto" class="custom-select" asp-for=@work.CategoryId asp-items=categoriesList>
+                <option hidden selected value="">Select Category</option>
+            </select>
+            <span class="text-danger" asp-validation-for=@work.CategoryId></span>
+        </div>
+    }
     <button type="submit" class="btn btn-primary">Save Changes</button>
 </form>
