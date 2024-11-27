@@ -13,6 +13,8 @@ builder.Services.AddIdentity<AppUser, IdentityRole>(
         options.Password.RequireDigit = false;
         options.Password.RequireLowercase = false;
         options.Password.RequireUppercase = false;
+        options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromSeconds(10);
+        options.Lockout.MaxFailedAccessAttempts = 10;
     }
 )
     .AddDefaultTokenProviders()
@@ -25,6 +27,7 @@ builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 app.UseStaticFiles();
+app.UseAuthentication();
 
 app.MapControllerRoute(
       name: "areas",
