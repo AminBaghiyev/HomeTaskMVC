@@ -1,7 +1,23 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using PurpleBuzzPr.DAL;
+using PurpleBuzzPr.Models;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddIdentity<AppUser, IdentityRole>(
+    options =>
+    {
+        options.Password.RequiredLength = 8;
+        options.Password.RequireNonAlphanumeric = false;
+        options.Password.RequireDigit = false;
+        options.Password.RequireLowercase = false;
+        options.Password.RequireUppercase = false;
+    }
+)
+    .AddDefaultTokenProviders()
+    .AddEntityFrameworkStores<AppDBContext>();
+
 builder.Services.AddDbContext<AppDBContext>(
     options => options.UseSqlServer(builder.Configuration.GetConnectionString("MsSql")
 ));

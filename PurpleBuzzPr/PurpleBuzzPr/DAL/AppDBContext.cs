@@ -1,9 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using PurpleBuzzPr.Models;
 
 namespace PurpleBuzzPr.DAL
 {
-    public class AppDBContext : DbContext
+    public class AppDBContext : IdentityDbContext<AppUser>
     {
         public DbSet<TeamMember> TeamMembers { get; set; }
         public DbSet<ContactMessage> ContactMessages { get; set; }
