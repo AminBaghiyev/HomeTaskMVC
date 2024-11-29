@@ -1,0 +1,15 @@
+C:\Users\USER\Desktop\AB205\HomeTaskMVC\Mediplus\Mediplus.DAL\bin\Debug\net8.0\Mediplus.DAL.deps.json
+C:\Users\USER\Desktop\AB205\HomeTaskMVC\Mediplus\Mediplus.DAL\bin\Debug\net8.0\Mediplus.DAL.runtimeconfig.json
+C:\Users\USER\Desktop\AB205\HomeTaskMVC\Mediplus\Mediplus.DAL\bin\Debug\net8.0\Mediplus.DAL.dll
+C:\Users\USER\Desktop\AB205\HomeTaskMVC\Mediplus\Mediplus.DAL\bin\Debug\net8.0\Mediplus.DAL.pdb
+C:\Users\USER\Desktop\AB205\HomeTaskMVC\Mediplus\Mediplus.DAL\obj\Debug\net8.0\Mediplus.DAL.csproj.AssemblyReference.cache
+C:\Users\USER\Desktop\AB205\HomeTaskMVC\Mediplus\Mediplus.DAL\obj\Debug\net8.0\Mediplus.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Desktop\AB205\HomeTaskMVC\Mediplus\Mediplus.DAL\obj\Debug\net8.0\Mediplus.DAL.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\AB205\HomeTaskMVC\Mediplus\Mediplus.DAL\obj\Debug\net8.0\Mediplus.DAL.AssemblyInfo.cs
+C:\Users\USER\Desktop\AB205\HomeTaskMVC\Mediplus\Mediplus.DAL\obj\Debug\net8.0\Mediplus.DAL.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\AB205\HomeTaskMVC\Mediplus\Mediplus.DAL\obj\Debug\net8.0\Mediplus.DAL.sourcelink.json
+C:\Users\USER\Desktop\AB205\HomeTaskMVC\Mediplus\Mediplus.DAL\obj\Debug\net8.0\Mediplus.DAL.dll
+C:\Users\USER\Desktop\AB205\HomeTaskMVC\Mediplus\Mediplus.DAL\obj\Debug\net8.0\refint\Mediplus.DAL.dll
+C:\Users\USER\Desktop\AB205\HomeTaskMVC\Mediplus\Mediplus.DAL\obj\Debug\net8.0\Mediplus.DAL.pdb
+C:\Users\USER\Desktop\AB205\HomeTaskMVC\Mediplus\Mediplus.DAL\obj\Debug\net8.0\Mediplus.DAL.genruntimeconfig.cache
+C:\Users\USER\Desktop\AB205\HomeTaskMVC\Mediplus\Mediplus.DAL\obj\Debug\net8.0\ref\Mediplus.DAL.dll

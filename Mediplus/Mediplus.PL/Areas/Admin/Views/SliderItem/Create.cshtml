@@ -1,0 +1,36 @@
+﻿@model SliderItem
+
+<form asp-action=@(Model == null ? "Create" : "Update") class="container" method="POST">
+    <h2 class="my-4">@(Model == null ? "Add" : "Update") Slider Item</h2>
+    <div class="mb-3">
+        <label class="form-label" asp-for="Title">Title</label>
+        <input class="form-control" asp-for="Title" />
+        <span class="text-danger" asp-validation-for="Title"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="Description">Description</label>
+        <input class="form-control" asp-for="Description" />
+        <span class="text-danger" asp-validation-for="Description"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="MainUrl">Main URL</label>
+        <input class="form-control" asp-for="MainUrl" />
+        <span class="text-danger" asp-validation-for="MainUrl"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="SecondUrl">Second URL</label>
+        <input class="form-control" asp-for="SecondUrl" />
+        <span class="text-danger" asp-validation-for="SecondUrl"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="BackgroundImagePath">Background Image Path</label>
+        <input class="form-control" asp-for="BackgroundImagePath" placeholder="slider.jpg" />
+        <span class="text-danger" asp-validation-for="BackgroundImagePath"></span>
+    </div>
+    <div class="mb-3">
+        <input class="form-check-inline" asp-for="IsActive" />
+        <label class="form-label" asp-for="IsActive">Active?</label>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+</form>

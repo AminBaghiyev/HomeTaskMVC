@@ -1,0 +1,16 @@
+C:\Users\USER\Desktop\AB205\HomeTaskMVC\Mediplus\Mediplus.BL\bin\Debug\net8.0\Mediplus.BL.deps.json
+C:\Users\USER\Desktop\AB205\HomeTaskMVC\Mediplus\Mediplus.BL\bin\Debug\net8.0\Mediplus.BL.dll
+C:\Users\USER\Desktop\AB205\HomeTaskMVC\Mediplus\Mediplus.BL\bin\Debug\net8.0\Mediplus.BL.pdb
+C:\Users\USER\Desktop\AB205\HomeTaskMVC\Mediplus\Mediplus.BL\bin\Debug\net8.0\Mediplus.DAL.dll
+C:\Users\USER\Desktop\AB205\HomeTaskMVC\Mediplus\Mediplus.BL\bin\Debug\net8.0\Mediplus.DAL.pdb
+C:\Users\USER\Desktop\AB205\HomeTaskMVC\Mediplus\Mediplus.BL\obj\Debug\net8.0\Mediplus.BL.csproj.AssemblyReference.cache
+C:\Users\USER\Desktop\AB205\HomeTaskMVC\Mediplus\Mediplus.BL\obj\Debug\net8.0\Mediplus.BL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Desktop\AB205\HomeTaskMVC\Mediplus\Mediplus.BL\obj\Debug\net8.0\Mediplus.BL.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\AB205\HomeTaskMVC\Mediplus\Mediplus.BL\obj\Debug\net8.0\Mediplus.BL.AssemblyInfo.cs
+C:\Users\USER\Desktop\AB205\HomeTaskMVC\Mediplus\Mediplus.BL\obj\Debug\net8.0\Mediplus.BL.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\AB205\HomeTaskMVC\Mediplus\Mediplus.BL\obj\Debug\net8.0\Mediplus.BL.sourcelink.json
+C:\Users\USER\Desktop\AB205\HomeTaskMVC\Mediplus\Mediplus.BL\obj\Debug\net8.0\Mediplus.D11F09D3.Up2Date
+C:\Users\USER\Desktop\AB205\HomeTaskMVC\Mediplus\Mediplus.BL\obj\Debug\net8.0\Mediplus.BL.dll
+C:\Users\USER\Desktop\AB205\HomeTaskMVC\Mediplus\Mediplus.BL\obj\Debug\net8.0\refint\Mediplus.BL.dll
+C:\Users\USER\Desktop\AB205\HomeTaskMVC\Mediplus\Mediplus.BL\obj\Debug\net8.0\Mediplus.BL.pdb
+C:\Users\USER\Desktop\AB205\HomeTaskMVC\Mediplus\Mediplus.BL\obj\Debug\net8.0\ref\Mediplus.BL.dll
