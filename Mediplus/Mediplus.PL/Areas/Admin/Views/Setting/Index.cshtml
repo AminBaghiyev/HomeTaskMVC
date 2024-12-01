@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Setting>
+
+<!-- Begin Page Content -->
+<div class="container-fluid">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Settings</h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Key</th>
+                            <th>Value</th>
+                            <th>Active</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (Setting item in Model)
+                        {
+                            <tr>
+                                <td>@item.Id</td>
+                                <td>@item.Key</td>
+                                <td>@item.Value</td>
+                                <td>@item.IsActive</td>
+                                <td>
+                                    <a class="btn btn-primary" asp-controller="Setting" asp-action="Update" asp-route-id="@item.Id">Update</a>
+                                    @if (item.IsActive)
+                                    {
+                                        <a class="btn btn-danger" asp-controller="Setting" asp-action="SetDeactive" asp-route-id="@item.Id">Set Deactive</a>
+                                    } else
+                                    {
+                                        <a class="btn btn-success" asp-controller="Setting" asp-action="SetActive" asp-route-id="@item.Id">Set Active</a>
+                                    }
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.container-fluid -->
+<!-- Page level plugins -->
+<script src="~/admin/vendor/datatables/jquery.dataTables.min.js" defer></script>
+<script src="~/admin/vendor/datatables/dataTables.bootstrap4.min.js" defer></script>
+
+<!-- Page level custom scripts -->
+<script src="~/admin/js/demo/datatables-demo.js" defer></script>

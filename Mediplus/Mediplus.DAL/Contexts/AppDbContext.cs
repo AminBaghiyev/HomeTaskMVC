@@ -14,5 +14,13 @@ public class AppDbContext : IdentityDbContext<AppUser>
 
     public DbSet<Blog> Blogs { get; set; }
 
+    public DbSet<Setting> Settings { get; set; }
+
+    public DbSet<Appointment> Appointments { get; set; }
+
+    public DbSet<Doctor> Doctors { get; set; }
+
+    public DbSet<Patient> Patients { get; set; }
+
     public AppDbContext(DbContextOptions options) : base(options) { }
 }

@@ -1,4 +1,4 @@
-﻿using Mediplus.BL.Services.Concretes;
+﻿using Mediplus.BL.Services.Abstractions;
 using Mediplus.DAL.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,16 +7,16 @@ namespace Mediplus.PL.Areas.Admin.Controllers;
 [Area("Admin")]
 public class BlogController : Controller
 {
-	readonly IBlogService _blogService;
+	readonly IBaseService<Blog> _blogService;
 
-	public BlogController(IBlogService blogService)
+	public BlogController(IBaseService<Blog> blogService)
 	{
 		_blogService = blogService;
 	}
 
 	public async Task<IActionResult> Index()
 	{
-		IEnumerable<Blog> items = await _blogService.GetAllBlogsAsync();
+		IEnumerable<Blog> items = await _blogService.GetAllAsync();
 
 		return View(items);
 	}
@@ -35,14 +35,14 @@ public class BlogController : Controller
 			return View();
 		}
 
-		await _blogService.CreateBlogAsync(item);
+		await _blogService.CreateAsync(item);
 
 		return RedirectToAction(nameof(Index));
 	}
 
 	public async Task<IActionResult> Update(int Id)
 	{
-		Blog? portfolio = await _blogService.GetBlogByIdAsync(Id);
+		Blog? portfolio = await _blogService.GetByIdAsync(Id);
 		if (portfolio == null)
 		{
 			return RedirectToAction(nameof(Index));
@@ -60,14 +60,14 @@ public class BlogController : Controller
 			return View(nameof(Create), item);
 		}
 
-		await _blogService.UpdateBlogAsync(item.Id, item);
+		await _blogService.UpdateAsync(item.Id, item);
 
 		return RedirectToAction(nameof(Index));
 	}
 
 	public async Task<IActionResult> Remove(int Id)
 	{
-		await _blogService.DeleteBlogAsync(Id);
+		await _blogService.DeleteAsync(Id);
 
 		return RedirectToAction(nameof(Index));
 	}

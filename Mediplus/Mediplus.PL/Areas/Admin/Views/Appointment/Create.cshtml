@@ -1,0 +1,37 @@
+﻿@using Mediplus.BL.DTOs.AppointmentDTOs
+@using Mediplus.BL.DTOs.DoctorDTOs
+@using Mediplus.BL.DTOs.PatientDTOs
+@using Mediplus.PL.Areas.Admin.ViewModels.Appointment
+@model AppointmentVM
+
+<form asp-action="Create" class="container" method="POST">
+    <h2 class="my-4">Add Appointment</h2>
+    <div class="mb-3">
+        <select class="custom-select" asp-for="Form.DoctorId" asp-items="@(new SelectList(Model.Doctors, nameof(SelectOptionsDoctorDto.Id), nameof(SelectOptionsDoctorDto.Fullname)))">
+            <option value="" hidden selected>Select Doctor</option>
+        </select>
+        <span class="text-danger" asp-validation-for="Form.DoctorId"></span>
+    </div>
+    <div class="mb-3">
+        <select class="custom-select" asp-for="Form.PatientId" asp-items="@(new SelectList(Model.Patients, nameof(SelectOptionsPatientDto.Id), nameof(SelectOptionsPatientDto.Fullname)))">
+            <option value="" hidden selected>Select Patient</option>
+        </select>
+        <span class="text-danger" asp-validation-for="Form.PatientId"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="Form.AppointmentDate"></label>
+        <input class="form-control" asp-for="Form.AppointmentDate" />
+        <span class="text-danger" asp-validation-for="Form.AppointmentDate"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="Form.Message"></label>
+        <input class="form-control" asp-for="Form.Message" />
+        <span class="text-danger" asp-validation-for="Form.Message"></span>
+    </div>
+    <div class="mb-3">
+        <input class="form-check-inline" asp-for="Form.IsActive" />
+        <label class="form-label" asp-for="Form.IsActive">Active?</label>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+</form>

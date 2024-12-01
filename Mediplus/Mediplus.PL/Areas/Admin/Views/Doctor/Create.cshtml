@@ -1,0 +1,37 @@
+﻿@using Mediplus.BL.DTOs.DoctorDTOs
+@model FormDoctorDto
+
+<form asp-action=@(Model == null ? "Create" : "Update") class="container" method="POST">
+    <h2 class="my-4">@(Model == null ? "Add" : "Edit") Doctor</h2>
+    <div class="mb-3">
+        <label class="form-label" asp-for="Name"></label>
+        <input class="form-control" asp-for="Name" />
+        <span class="text-danger" asp-validation-for="Name"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="Surname"></label>
+        <input class="form-control" asp-for="Surname" />
+        <span class="text-danger" asp-validation-for="Surname"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="FINCode"></label>
+        <input class="form-control" asp-for="FINCode" />
+        <span class="text-danger" asp-validation-for="FINCode"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="PhoneNumber"></label>
+        <input class="form-control" asp-for="PhoneNumber" />
+        <span class="text-danger" asp-validation-for="PhoneNumber"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="Email"></label>
+        <input class="form-control" asp-for="Email" />
+        <span class="text-danger" asp-validation-for="Email"></span>
+    </div>
+    <div class="mb-3">
+        <input class="form-check-inline" asp-for="IsActive" />
+        <label class="form-label" asp-for="IsActive">Active?</label>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+</form>

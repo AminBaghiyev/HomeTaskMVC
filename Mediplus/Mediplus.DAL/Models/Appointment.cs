@@ -1,17 +1,17 @@
 ﻿using Mediplus.DAL.Models.Base;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Mediplus.DAL.Models;
 
-public class Appointment : BaseEntity
+public class Appointment : BaseAuditableEntity
 {
-    public string Name { get; set; }
-    public string Email { get; set; }
-    public string Phone { get; set; }
-    public int DepartmentId { get; set; }
-    public Department Department { get; set; } = null!;
-    public int DoctorId { get; set; }
-    public Doctor Doctor { get; set; } = null!;
-    public DateTime StartDate { get; set; }
+	public int? DoctorId { get; set; }
+    [NotMapped]
+	public Doctor? Doctor { get; set; }
+	public int PatientId { get; set; }
+	[NotMapped]
+	public Patient Patient { get; set; } = null!;
+    public DateTime AppointmentDate { get; set; }
     public string Message { get; set; }
-    public DateTime? EndDate { get; set; }
+	public bool IsActive { get; set; }
 }

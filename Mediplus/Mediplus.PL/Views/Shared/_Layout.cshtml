@@ -1,4 +1,10 @@
-﻿<!DOCTYPE html>
+﻿@using Mediplus.BL.Services.Abstractions
+@inject ILayoutService service
+@{
+	Dictionary<string, string?> settings = await service.GetSettingsAsync();
+}
+
+<!DOCTYPE html>
 <html class="no-js" lang="en">
 	<head>
 		<!-- Meta Tags -->
@@ -79,8 +85,14 @@
 						<div class="col-lg-6 col-md-7 col-12">
 							<!-- Top Contact -->
 							<ul class="top-contact">
-								<li><i class="fa fa-phone"></i>+880 1234 56789</li>
-								<li><i class="fa fa-envelope"></i><a href="mailto:support@yourmail.com">support@yourmail.com</a></li>
+							@if (settings.ContainsKey("Phone Number"))
+							{
+								<li><i class="fa fa-phone"></i>@settings["Phone Number"]</li>
+							}
+							@if (settings.ContainsKey("E-mail"))
+							{
+								<li><i class="fa fa-envelope"></i><a href="mailto:@settings["E-mail"]">@settings["E-mail"]</a></li>
+							}
 							</ul>
 							<!-- End Top Contact -->
 						</div>
@@ -158,15 +170,30 @@
 						<div class="col-lg-3 col-md-6 col-12">
 							<div class="single-footer">
 								<h2>About Us</h2>
-								<p>Lorem ipsum dolor sit am consectetur adipisicing elit do eiusmod tempor incididunt ut labore dolore magna.</p>
+								<p>@(settings.ContainsKey("About Us") ? settings["About Us"] : "")</p>
 								<!-- Social -->
 								<ul class="social">
-									<li><a href="#"><i class="icofont-facebook"></i></a></li>
-									<li><a href="#"><i class="icofont-google-plus"></i></a></li>
-									<li><a href="#"><i class="icofont-twitter"></i></a></li>
-									<li><a href="#"><i class="icofont-vimeo"></i></a></li>
-									<li><a href="#"><i class="icofont-pinterest"></i></a></li>
-								</ul>
+								@if (settings.ContainsKey("Facebook"))
+								{
+									<li><a href='@settings["Facebook"]'><i class="icofont-facebook"></i></a></li>
+								}
+								@if (settings.ContainsKey("Google Plus"))
+								{
+									<li><a href='@settings["Google Plus"]'><i class="icofont-google-plus"></i></a></li>
+								}
+								@if (settings.ContainsKey("Twitter"))
+								{
+									<li><a href='@settings["Twitter"]'><i class="icofont-twitter"></i></a></li>
+								}
+								@if (settings.ContainsKey("Vimeo"))
+								{
+									<li><a href='@settings["Vimeo"]'><i class="icofont-vimeo"></i></a></li>
+								}
+								@if (settings.ContainsKey("Pinterest"))
+								{
+									<li><a href='@settings["Pinterest"]'><i class="icofont-pinterest"></i></a></li>
+								}
+							</ul>
 								<!-- End Social -->
 							</div>
 						</div>

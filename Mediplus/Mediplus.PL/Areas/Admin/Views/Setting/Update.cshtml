@@ -1,0 +1,12 @@
+﻿@model Setting
+
+<form asp-action="Update" class="container" method="POST">
+    <h2 class="my-4">Update @Model.Key</h2>
+    <input type="hidden" asp-for="Key" />
+    <div class="mb-3">
+        <input class="form-control" asp-for="Value" />
+        <span class="text-danger" asp-validation-for="Value"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+</form>

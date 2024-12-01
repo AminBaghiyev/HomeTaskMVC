@@ -1,4 +1,5 @@
 ﻿@using Mediplus.PL.ViewModels.Home
+@using Mediplus.BL.DTOs.AppointmentDTOs
 @model HomeVM
 
 <section class="slider">
@@ -264,7 +265,7 @@
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-12">
 				<div class="content">
-					<h2>Do you need Emergency Medical Care? Call @@ 1234 56789</h2>
+					<h2>Do you need Emergency Medical Care? Call @@ @(Model.Settings.ContainsKey("Phone Number") ? Model.Settings["Phone Number"] : "")</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porttitor dictum turpis nec gravida.</p>
 					<div class="button">
 						<a href="#" class="btn">Contact Now</a>
@@ -561,56 +562,31 @@
 		</div>
 		<div class="row">
 			<div class="col-lg-6 col-md-12 col-12">
-				<form class="form" action="#">
+				<form asp-action="BookAppointment" class="form" method="POST">
 					<div class="row">
 						<div class="col-lg-6 col-md-6 col-12">
 							<div class="form-group">
-								<input name="name" type="text" placeholder="Name">
+								<input asp-for="AppointmentForm.Name">
 							</div>
 						</div>
 						<div class="col-lg-6 col-md-6 col-12">
 							<div class="form-group">
-								<input name="email" type="email" placeholder="Email">
+								<input asp-for="AppointmentForm.Surname">
 							</div>
 						</div>
 						<div class="col-lg-6 col-md-6 col-12">
 							<div class="form-group">
-								<input name="phone" type="text" placeholder="Phone">
+								<input asp-for="AppointmentForm.FINCode">
 							</div>
 						</div>
 						<div class="col-lg-6 col-md-6 col-12">
 							<div class="form-group">
-								<div class="nice-select form-control wide" tabindex="0"><span class="current">Department</span>
-									<ul class="list">
-										<li data-value="1" class="option selected ">Department</li>
-										<li data-value="2" class="option">Cardiac Clinic</li>
-										<li data-value="3" class="option">Neurology</li>
-										<li data-value="4" class="option">Dentistry</li>
-										<li data-value="5" class="option">Gastroenterology</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-6 col-md-6 col-12">
-							<div class="form-group">
-								<div class="nice-select form-control wide" tabindex="0"><span class="current">Doctor</span>
-									<ul class="list">
-										<li data-value="1" class="option selected ">Doctor</li>
-										<li data-value="2" class="option">Dr. Akther Hossain</li>
-										<li data-value="3" class="option">Dr. Dery Alex</li>
-										<li data-value="4" class="option">Dr. Jovis Karon</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-6 col-md-6 col-12">
-							<div class="form-group">
-								<input type="text" placeholder="Date" id="datepicker">
+								<input asp-for="AppointmentForm.PhoneNumber">
 							</div>
 						</div>
 						<div class="col-lg-12 col-md-12 col-12">
 							<div class="form-group">
-								<textarea name="message" placeholder="Write Your Message Here....."></textarea>
+								<textarea asp-for="AppointmentForm.Message"></textarea>
 							</div>
 						</div>
 					</div>

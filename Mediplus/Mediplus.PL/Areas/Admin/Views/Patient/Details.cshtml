@@ -1,0 +1,42 @@
+﻿@model Patient
+
+<div class="container">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Patient Details</h6>
+        </div>
+        <div class="card-body">
+            <h1>@Model.Name @Model.Surname</h1>
+            <p>Id: @Model.Id</p>
+            <p>Username: @Model.Username</p>
+            <p>FIN Code: @Model.FINCode</p>
+            <p>Phone Number: @Model.PhoneNumber</p>
+            <p>Is Active?: @Model.IsActive</p>
+            <div class="table-responsive">
+                <table class="table table-bordered" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Doctor</th>
+                            <th>Appointment Date</th>
+                            <th>Message</th>
+                            <th>Active</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (Appointment item in Model.Appointments)
+                        {
+                            <tr>
+                                <td>@item.Id</td>
+                                <td>@item.DoctorId</td>
+                                <td>@item.AppointmentDate</td>
+                                <td>@item.Message</td>
+                                <td>@item.IsActive</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

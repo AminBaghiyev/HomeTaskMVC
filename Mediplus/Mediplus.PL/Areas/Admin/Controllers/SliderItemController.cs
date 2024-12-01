@@ -1,4 +1,4 @@
-﻿using Mediplus.BL.Services.Concretes;
+﻿using Mediplus.BL.Services.Abstractions;
 using Mediplus.DAL.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,16 +7,16 @@ namespace Mediplus.PL.Areas.Admin.Controllers;
 [Area("Admin")]
 public class SliderItemController : Controller
 {
-    readonly ISliderItemService _sliderItemService;
+    readonly IBaseService<SliderItem> _sliderItemService;
 
-    public SliderItemController(ISliderItemService sliderItemService)
+    public SliderItemController(IBaseService<SliderItem> sliderItemService)
     {
-        _sliderItemService = sliderItemService;
+		_sliderItemService = sliderItemService;
     }
 
     public async Task<IActionResult> Index()
     {
-        IEnumerable<SliderItem> items = await _sliderItemService.GetAllSliderItemsAsync();
+        IEnumerable<SliderItem> items = await _sliderItemService.GetAllAsync();
 
         return View(items);
     }
@@ -35,14 +35,14 @@ public class SliderItemController : Controller
             return View();
         }
 
-        await _sliderItemService.CreateSliderItemAsync(item);
+        await _sliderItemService.CreateAsync(item);
 
         return RedirectToAction(nameof(Index));
     }
 
     public async Task<IActionResult> Update(int Id)
     {
-        SliderItem? sliderItem = await _sliderItemService.GetSliderItemByIdAsync(Id);
+        SliderItem? sliderItem = await _sliderItemService.GetByIdAsync(Id);
         if(sliderItem == null)
         {
             return RedirectToAction(nameof(Index));
@@ -60,14 +60,14 @@ public class SliderItemController : Controller
             return View(nameof(Create), item);
         }
 
-        await _sliderItemService.UpdateSliderItemAsync(item.Id, item);
+        await _sliderItemService.UpdateAsync(item.Id, item);
 
         return RedirectToAction(nameof(Index));
     }
 
     public async Task<IActionResult> Remove(int Id)
     {
-        await _sliderItemService.DeleteSliderItemAsync(Id);
+        await _sliderItemService.DeleteAsync(Id);
 
         return RedirectToAction(nameof(Index));
     }

@@ -27,10 +27,11 @@ builder.Services.AddDbContext<AppDbContext>(
     options => options.UseSqlServer(builder.Configuration.GetConnectionString("MsSql"))
 );
 
-builder.Services.AddScoped<ISliderItemService, SliderItemService>();
-builder.Services.AddScoped<IPortfolioService, PortfolioService>();
-builder.Services.AddScoped<IPartnerService, PartnerService>();
-builder.Services.AddScoped<IBlogService, BlogService>();
+builder.Services.AddScoped<ISettingService, SettingService>();
+builder.Services.AddScoped<ILayoutService, LayoutService>();
+builder.Services.AddScoped(typeof(IBaseService<>), typeof(BaseService<>));
+builder.Services.AddScoped(typeof(IUsernameService<>), typeof(UsernameService<>));
+builder.Services.AddScoped<IAppointmentService, AppointmentService>();
 
 var app = builder.Build();
 app.UseStaticFiles();
