@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\II Novbe\\Desktop\\AB 205\\HomeTaskMVC\\Inance\\Inance\\Inance.csproj": {}
+    "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Inance\\Inance\\Inance.csproj": {}
   },
   "projects": {
-    "C:\\Users\\II Novbe\\Desktop\\AB 205\\HomeTaskMVC\\Inance\\Inance\\Inance.csproj": {
+    "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Inance\\Inance\\Inance.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\II Novbe\\Desktop\\AB 205\\HomeTaskMVC\\Inance\\Inance\\Inance.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Inance\\Inance\\Inance.csproj",
         "projectName": "Inance",
-        "projectPath": "C:\\Users\\II Novbe\\Desktop\\AB 205\\HomeTaskMVC\\Inance\\Inance\\Inance.csproj",
-        "packagesPath": "C:\\Users\\II Novbe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\II Novbe\\Desktop\\AB 205\\HomeTaskMVC\\Inance\\Inance\\obj\\",
+        "projectPath": "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Inance\\Inance\\Inance.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Inance\\Inance\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\II Novbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

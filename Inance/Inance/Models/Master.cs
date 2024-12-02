@@ -15,6 +15,6 @@ public class Master : BaseAuditableEntity
     public int ServiceId { get; set; }
 
     [NotMapped]
-    public Service Service { get; set; }
+    public Service? Service { get; set; }
     public ICollection<Order> Orders { get; set; }
 }

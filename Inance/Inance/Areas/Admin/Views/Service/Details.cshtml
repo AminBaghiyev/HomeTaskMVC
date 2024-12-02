@@ -2,17 +2,73 @@
 @model GetServiceDetailsDto
 
 <div class="container">
-    <p>Title: @Model.Title</p>
-    <p>Description: @Model.Description</p>
-    <p>Active: @Model.IsActive</p>
-    <p>Created Time: @Model.CreatedAt</p>
-    <p>Last Modified Time: @Model.UpdatedAt</p>
-    <p>Masters:</p>
-    <ul>
-
-    </ul>
-    <p>Orders:</p>
-    <ul>
-
-    </ul>
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Service Details</h6>
+        </div>
+        <div class="card-body">
+            <p>Title: @Model.Title</p>
+            <p>Description: @Model.Description</p>
+            <p>Active: @Model.IsActive</p>
+            <p>Created Time: @Model.CreatedAt</p>
+            <p>Last Modified Time: @Model.UpdatedAt</p>
+            <div class="table-responsive">
+                <table class="table table-bordered" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Master</th>
+                            <th>Phone Number</th>
+                            <th>E-mail</th>
+                            <th>Experience Year</th>
+                            <th>Active</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (Master item in Model.Masters)
+                        {
+                            <tr>
+                                <td>@item.Id</td>
+                                <td>@item.Surname @item.Name</td>
+                                <td>@item.PhoneNumber</td>
+                                <td>@item.Email</td>
+                                <td>@item.ExperienceYear</td>
+                                <td>@item.IsActive</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <br />
+            <div class="table-responsive">
+                <table class="table table-bordered" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Client</th>
+                            <th>Client Phone Number</th>
+                            <th>Client E-mail</th>
+                            <th>Master Id</th>
+                            <th>Created Time</th>
+                            <th>Active</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (Order item in Model.Orders)
+                        {
+                            <tr>
+                                <td>@item.Id</td>
+                                <td>@item.ClientSurname @item.ClientName</td>
+                                <td>@item.ClientPhoneNumber</td>
+                                <td>@item.ClientEmail</td>
+                                <td>@item.MasterId</td>
+                                <td>@item.CreatedAt</td>
+                                <td>@item.IsActive</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 </div>

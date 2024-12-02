@@ -1,0 +1,48 @@
+﻿@model Master
+
+<div class="container">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Master Details</h6>
+        </div>
+        <div class="card-body">
+            <h1>@Model.Name @Model.Surname</h1>
+            <p>Id: @Model.Id</p>
+            <p>Username: @Model.Username</p>
+            <p>Phone Number: @Model.PhoneNumber</p>
+            <p>E-mail: @Model.Email</p>
+            <p>Experience Year: @Model.ExperienceYear</p>
+            <p>Service: @Model?.Service?.Title</p>
+            <p>Is Active?: @Model.IsActive</p>
+            <p>Created Date: @Model.CreatedAt</p>
+            <p>Last Modified Date: @Model.UpdatedAt</p>
+            <div class="table-responsive">
+                <table class="table table-bordered" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Client</th>
+                            <th>Phone Number</th>
+                            <th>Problem</th>
+                            <th>Created Date</th>
+                            <th>Active</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (Order item in Model.Orders)
+                        {
+                            <tr>
+                                <td>@item.Id</td>
+                                <td>@item.ClientSurname @item.ClientName</td>
+                                <td>@item.ClientPhoneNumber</td>
+                                <td>@item.Problem</td>
+                                <td>@item.CreatedAt</td>
+                                <td>@item.IsActive</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

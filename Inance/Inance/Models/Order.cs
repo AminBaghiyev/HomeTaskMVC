@@ -12,11 +12,11 @@ public class Order : BaseAuditableEntity
     public int ServiceId { get; set; }
 
     [NotMapped]
-    public Service Service { get; set; }
+    public Service? Service { get; set; }
     public int MasterId { get; set; }
 
     [NotMapped]
-    public Master Master { get; set; }
+    public Master? Master { get; set; }
     public string Problem { get; set; }
     public bool IsActive { get; set; }
 }

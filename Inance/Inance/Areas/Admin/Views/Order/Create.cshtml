@@ -1,0 +1,51 @@
+﻿@using Inance.Areas.Admin.ViewModels
+@model OrderVM
+
+<form asp-action=@(Model.Form is null ? "Create" : "Update") class="container" method="POST">
+    <h2 class="my-4">@(Model.Form is null ? "Add" : "Update") Order</h2>
+    <input type="hidden" asp-for="Form.Id" />
+    <div class="mb-3">
+        <label class="form-label" asp-for="Form.ClientName"></label>
+        <input class="form-control" asp-for="Form.ClientName" />
+        <span class="text-danger" asp-validation-for="Form.ClientName"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="Form.ClientSurname"></label>
+        <input class="form-control" asp-for="Form.ClientSurname" />
+        <span class="text-danger" asp-validation-for="Form.ClientSurname"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="Form.ClientPhoneNumber"></label>
+        <input class="form-control" asp-for="Form.ClientPhoneNumber" />
+        <span class="text-danger" asp-validation-for="Form.ClientPhoneNumber"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="Form.ClientEmail"></label>
+        <input class="form-control" asp-for="Form.ClientEmail" />
+        <span class="text-danger" asp-validation-for="Form.ClientEmail"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="Form.Problem"></label>
+        <input class="form-control" asp-for="Form.Problem" />
+        <span class="text-danger" asp-validation-for="Form.Problem"></span>
+    </div>
+    @if (Model.Form is not null)
+    {
+        <div class="mb-3">
+            <input type="hidden" asp-for="Form.MasterId" />
+            <p>@Model?.Master?.Surname @Model?.Master?.Name</p>
+        </div>
+    }
+    <div class="mb-3">
+        <select class="custom-select" asp-for="Form.ServiceId" asp-items="@Model.Services">
+            <option value="" hidden selected>Select Service</option>
+        </select>
+        <span class="text-danger" asp-validation-for="Form.ServiceId"></span>
+    </div>
+    <div class="mb-3">
+        <input class="form-check-inline" asp-for="Form.IsActive" />
+        <label class="form-label" asp-for="Form.IsActive">Active?</label>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+</form>

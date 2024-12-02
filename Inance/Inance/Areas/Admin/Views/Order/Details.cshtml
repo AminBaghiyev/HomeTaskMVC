@@ -1,0 +1,21 @@
+﻿@model Order
+
+<div class="container">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Order Details</h6>
+        </div>
+        <div class="card-body">
+            <p>Id: @Model.Id</p>
+            <p>Client Fullname: @Model.ClientName @Model.ClientSurname</p>
+            <p>Client Phone Number: @Model.ClientPhoneNumber</p>
+            <p>Client E-mail: @Model.ClientEmail</p>
+            <p>Master Fullname: @Model?.Master?.Name @Model?.Master?.Surname</p>
+            <p>Master Phone Number: @Model?.Master?.PhoneNumber</p>
+            <p>Service: @Model?.Service?.Title</p>
+            <p>Is Active?: @Model.IsActive</p>
+            <p>Created Date: @Model.CreatedAt</p>
+            <p>Last Modified Date: @Model.UpdatedAt</p>
+        </div>
+    </div>
+</div>
