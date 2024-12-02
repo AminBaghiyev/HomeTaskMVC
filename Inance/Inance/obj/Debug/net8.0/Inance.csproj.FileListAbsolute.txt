@@ -514,3 +514,8 @@ C:\Users\USER\Desktop\AB205\HomeTaskMVC\Inance\Inance\obj\Debug\net8.0\refint\In
 C:\Users\USER\Desktop\AB205\HomeTaskMVC\Inance\Inance\obj\Debug\net8.0\Inance.pdb
 C:\Users\USER\Desktop\AB205\HomeTaskMVC\Inance\Inance\obj\Debug\net8.0\Inance.genruntimeconfig.cache
 C:\Users\USER\Desktop\AB205\HomeTaskMVC\Inance\Inance\obj\Debug\net8.0\ref\Inance.dll
+C:\Users\USER\Desktop\AB205\HomeTaskMVC\Inance\Inance\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\USER\Desktop\AB205\HomeTaskMVC\Inance\Inance\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\USER\Desktop\AB205\HomeTaskMVC\Inance\Inance\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\USER\Desktop\AB205\HomeTaskMVC\Inance\Inance\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\USER\Desktop\AB205\HomeTaskMVC\Inance\Inance\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll

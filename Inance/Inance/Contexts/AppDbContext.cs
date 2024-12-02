@@ -1,9 +1,11 @@
 ﻿using Inance.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Inance.Contexts;
 
-public class AppDbContext : DbContext
+public class AppDbContext : IdentityDbContext<AppUser, IdentityRole, string>
 {
     public DbSet<Order> Orders { get; set; }
     public DbSet<Master> Masters { get; set; }

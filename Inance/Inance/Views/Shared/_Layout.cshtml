@@ -77,6 +77,31 @@
                                 <li class="nav-item">
                                     <a class="nav-link" asp-controller="ContactUs">Contact Us</a>
                                 </li>
+                                @if (User.Identity is not null && User.Identity.IsAuthenticated)
+                                {
+                                    if (User.IsInRole(Roles.Admin.ToString()))
+                                    {
+                                        <li class="nav-item">
+                                            <a class="nav-link" asp-area="Admin" asp-controller="Dashboard" asp-action="Index">@User.Identity.Name</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" asp-controller="Accounts" asp-action="Logout">Logout</a>
+                                        </li>
+                                    } else
+                                    {
+                                        <li class="nav-item">
+                                            <a class="nav-link">@User.Identity.Name</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" asp-controller="Accounts" asp-action="Logout">Logout</a>
+                                        </li>
+                                    }
+                                } else
+                                {
+                                    <li class="nav-item">
+                                        <a class="nav-link" asp-controller="Accounts" asp-action="Login">Login</a>
+                                    </li>
+                                }
                             </ul>
                         </div>
                     </nav>

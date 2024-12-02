@@ -2,12 +2,14 @@
 using Inance.Contexts;
 using Inance.DTOs.MasterDTOs;
 using Inance.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace Inance.Areas.Admin.Controllers;
 
 [Area("Admin")]
+[Authorize(Roles = "Admin")]
 public class MasterController : Controller
 {
     readonly AppDbContext _db;

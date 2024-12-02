@@ -1,12 +1,14 @@
 ﻿using Inance.Contexts;
 using Inance.DTOs.ServiceDTOs;
 using Inance.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace Inance.Areas.Admin.Controllers;
 
 [Area("Admin")]
+[Authorize(Roles = "Admin")]
 public class ServiceController : Controller
 {
     readonly AppDbContext _db;
