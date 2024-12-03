@@ -18,7 +18,7 @@ public class BaseService<T> : IBaseService<T> where T : BaseEntity, new()
     public async Task CreateAsync(T item)
     {
         PropertyInfo? createdAtProp = typeof(T).GetProperty("CreatedAt");
-        if (createdAtProp is not null && createdAtProp?.PropertyType == typeof(DateTime)) createdAtProp.SetValue(item, DateTime.Now);
+        if (createdAtProp is not null) createdAtProp.SetValue(item, DateTime.Now);
 
         await _db.Set<T>().AddAsync(item);
         await _db.SaveChangesAsync();
@@ -27,7 +27,7 @@ public class BaseService<T> : IBaseService<T> where T : BaseEntity, new()
     public async Task DeleteAsync(int id)
     {
         T? item = await GetByIdAsync(id);
-        if (item == null) return;
+        if (item is null) return;
 
         _db.Set<T>().Remove(item);
         await _db.SaveChangesAsync();
@@ -52,10 +52,12 @@ public class BaseService<T> : IBaseService<T> where T : BaseEntity, new()
     public async Task UpdateAsync(int id, T updatedItem)
     {
         T? item = await GetByIdAsNoTrackingAsync(id);
-        if (item == null) return;
+        if (item is null) return;
 
         PropertyInfo? updatedAtProp = typeof(T).GetProperty("UpdatedAt");
-        if (updatedAtProp is not null && updatedAtProp.PropertyType == typeof(DateTime)) updatedAtProp.SetValue(updatedItem, DateTime.Now);
+        if (updatedAtProp is not null) updatedAtProp.SetValue(updatedItem, DateTime.Now);
+        PropertyInfo? createdAtProp = typeof(T).GetProperty("CreatedAt");
+        if (createdAtProp is not null) createdAtProp.SetValue(updatedItem, createdAtProp.GetValue(item));
 
         _db.Set<T>().Update(updatedItem);
         await _db.SaveChangesAsync();

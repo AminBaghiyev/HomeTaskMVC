@@ -10,11 +10,13 @@ public class DoctorController : Controller
 {
     readonly IBaseService<Doctor> _doctorService;
     readonly IAppointmentService _appointmentService;
+    readonly IHospitalsDoctorsService _hospitalsDoctorsService;
 
-    public DoctorController(IBaseService<Doctor> doctorService, IAppointmentService appointmentService)
+    public DoctorController(IBaseService<Doctor> doctorService, IAppointmentService appointmentService, IHospitalsDoctorsService hospitalsDoctorsService)
     {
         _doctorService = doctorService;
         _appointmentService = appointmentService;
+        _hospitalsDoctorsService = hospitalsDoctorsService;
     }
 
     public async Task<IActionResult> Index()
@@ -109,6 +111,7 @@ public class DoctorController : Controller
         }
 
         doctor.Appointments = await _appointmentService.GetAllAppointmentsByDoctorIdAsync(doctor.Id);
+        doctor.Hospitals = await _hospitalsDoctorsService.GetByDoctorIdAsync(doctor.Id) ?? [];
 
         return View(doctor);
     }

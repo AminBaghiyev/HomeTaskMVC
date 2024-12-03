@@ -1,0 +1,43 @@
+﻿@model Hospital
+
+<div class="container">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Hospital Details</h6>
+        </div>
+        <div class="card-body">
+            <h1>@Model.Name</h1>
+            <p>Id: @Model.Id</p>
+            <p>Phone Number: @Model.PhoneNumber</p>
+            <p>Email: @Model.Email</p>
+            <p>Is Active?: @Model.IsActive</p>
+            <p>Created Time: @Model.CreatedAt</p>
+            <p>Last Modified Time: @Model.UpdatedAt</p>
+            <div class="table-responsive">
+                <table class="table table-bordered" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Doctor</th>
+                            <th>Phone Number</th>
+                            <th>E-mail</th>
+                            <th>Active</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (Doctor item in Model.Doctors)
+                        {
+                            <tr>
+                                <td>@item.Id</td>
+                                <td>@item.Fullname</td>
+                                <td>@item.PhoneNumber</td>
+                                <td>@item.Email</td>
+                                <td>@item.IsActive</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -32,6 +32,7 @@ builder.Services.AddScoped<ILayoutService, LayoutService>();
 builder.Services.AddScoped(typeof(IBaseService<>), typeof(BaseService<>));
 builder.Services.AddScoped(typeof(IUsernameService<>), typeof(UsernameService<>));
 builder.Services.AddScoped<IAppointmentService, AppointmentService>();
+builder.Services.AddScoped<IHospitalsDoctorsService, HospitalsDoctorsService>();
 
 var app = builder.Build();
 app.UseStaticFiles();

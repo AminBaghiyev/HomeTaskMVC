@@ -208,6 +208,59 @@ namespace Mediplus.DAL.Migrations
                     b.ToTable("Doctors");
                 });
 
+            modelBuilder.Entity("Mediplus.DAL.Models.Hospital", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Hospitals");
+                });
+
+            modelBuilder.Entity("Mediplus.DAL.Models.HospitalsDoctors", b =>
+                {
+                    b.Property<int>("HospitalId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("DoctorId")
+                        .HasColumnType("int");
+
+                    b.HasKey("HospitalId", "DoctorId");
+
+                    b.HasIndex("DoctorId");
+
+                    b.ToTable("HospitalsDoctors");
+                });
+
             modelBuilder.Entity("Mediplus.DAL.Models.Partner", b =>
                 {
                     b.Property<int>("Id")
@@ -512,6 +565,25 @@ namespace Mediplus.DAL.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("Mediplus.DAL.Models.HospitalsDoctors", b =>
+                {
+                    b.HasOne("Mediplus.DAL.Models.Doctor", "Doctor")
+                        .WithMany("Hospitals")
+                        .HasForeignKey("DoctorId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Mediplus.DAL.Models.Hospital", "Hospital")
+                        .WithMany("Doctors")
+                        .HasForeignKey("HospitalId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Doctor");
+
+                    b.Navigation("Hospital");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -566,6 +638,13 @@ namespace Mediplus.DAL.Migrations
             modelBuilder.Entity("Mediplus.DAL.Models.Doctor", b =>
                 {
                     b.Navigation("Appointments");
+
+                    b.Navigation("Hospitals");
+                });
+
+            modelBuilder.Entity("Mediplus.DAL.Models.Hospital", b =>
+                {
+                    b.Navigation("Doctors");
                 });
 
             modelBuilder.Entity("Mediplus.DAL.Models.Patient", b =>

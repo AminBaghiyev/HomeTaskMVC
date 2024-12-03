@@ -3,32 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Mediplus\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F06C31CD-50C8-4CB0-9063-3F82D8F12F9B}|Mediplus.PL\\Mediplus.PL.csproj|c:\\users\\user\\desktop\\ab205\\hometaskmvc\\mediplus\\mediplus.pl\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F06C31CD-50C8-4CB0-9063-3F82D8F12F9B}|Mediplus.PL\\Mediplus.PL.csproj|solutionrelative:mediplus.pl\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F06C31CD-50C8-4CB0-9063-3F82D8F12F9B}|Mediplus.PL\\Mediplus.PL.csproj|c:\\users\\user\\desktop\\ab205\\hometaskmvc\\mediplus\\mediplus.pl\\areas\\admin\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F06C31CD-50C8-4CB0-9063-3F82D8F12F9B}|Mediplus.PL\\Mediplus.PL.csproj|solutionrelative:mediplus.pl\\areas\\admin\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06C31CD-50C8-4CB0-9063-3F82D8F12F9B}|Mediplus.PL\\Mediplus.PL.csproj|c:\\users\\user\\desktop\\ab205\\hometaskmvc\\mediplus\\mediplus.pl\\areas\\admin\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F06C31CD-50C8-4CB0-9063-3F82D8F12F9B}|Mediplus.PL\\Mediplus.PL.csproj|solutionrelative:mediplus.pl\\areas\\admin\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06C31CD-50C8-4CB0-9063-3F82D8F12F9B}|Mediplus.PL\\Mediplus.PL.csproj|c:\\users\\user\\desktop\\ab205\\hometaskmvc\\mediplus\\mediplus.pl\\areas\\admin\\views\\doctor\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F06C31CD-50C8-4CB0-9063-3F82D8F12F9B}|Mediplus.PL\\Mediplus.PL.csproj|solutionrelative:mediplus.pl\\areas\\admin\\views\\doctor\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F06C31CD-50C8-4CB0-9063-3F82D8F12F9B}|Mediplus.PL\\Mediplus.PL.csproj|c:\\users\\user\\desktop\\ab205\\hometaskmvc\\mediplus\\mediplus.pl\\areas\\admin\\views\\patient\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F06C31CD-50C8-4CB0-9063-3F82D8F12F9B}|Mediplus.PL\\Mediplus.PL.csproj|solutionrelative:mediplus.pl\\areas\\admin\\views\\patient\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F06C31CD-50C8-4CB0-9063-3F82D8F12F9B}|Mediplus.PL\\Mediplus.PL.csproj|c:\\users\\user\\desktop\\ab205\\hometaskmvc\\mediplus\\mediplus.pl\\areas\\admin\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F06C31CD-50C8-4CB0-9063-3F82D8F12F9B}|Mediplus.PL\\Mediplus.PL.csproj|solutionrelative:mediplus.pl\\areas\\admin\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4839DAAE-2A86-43B0-BFD1-55275F826B6E}|Mediplus.BL\\Mediplus.BL.csproj|c:\\users\\user\\desktop\\ab205\\hometaskmvc\\mediplus\\mediplus.bl\\services\\concretes\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4839DAAE-2A86-43B0-BFD1-55275F826B6E}|Mediplus.BL\\Mediplus.BL.csproj|solutionrelative:mediplus.bl\\services\\concretes\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F06C31CD-50C8-4CB0-9063-3F82D8F12F9B}|Mediplus.PL\\Mediplus.PL.csproj|c:\\users\\user\\desktop\\ab205\\hometaskmvc\\mediplus\\mediplus.pl\\areas\\admin\\views\\hospital\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F06C31CD-50C8-4CB0-9063-3F82D8F12F9B}|Mediplus.PL\\Mediplus.PL.csproj|solutionrelative:mediplus.pl\\areas\\admin\\views\\hospital\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F06C31CD-50C8-4CB0-9063-3F82D8F12F9B}|Mediplus.PL\\Mediplus.PL.csproj|c:\\users\\user\\desktop\\ab205\\hometaskmvc\\mediplus\\mediplus.pl\\areas\\admin\\views\\appointment\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F06C31CD-50C8-4CB0-9063-3F82D8F12F9B}|Mediplus.PL\\Mediplus.PL.csproj|solutionrelative:mediplus.pl\\areas\\admin\\views\\appointment\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4839DAAE-2A86-43B0-BFD1-55275F826B6E}|Mediplus.BL\\Mediplus.BL.csproj|c:\\users\\user\\desktop\\ab205\\hometaskmvc\\mediplus\\mediplus.bl\\services\\concretes\\baseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4839DAAE-2A86-43B0-BFD1-55275F826B6E}|Mediplus.BL\\Mediplus.BL.csproj|solutionrelative:mediplus.bl\\services\\concretes\\baseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06C31CD-50C8-4CB0-9063-3F82D8F12F9B}|Mediplus.PL\\Mediplus.PL.csproj|c:\\users\\user\\desktop\\ab205\\hometaskmvc\\mediplus\\mediplus.pl\\areas\\admin\\views\\appointment\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F06C31CD-50C8-4CB0-9063-3F82D8F12F9B}|Mediplus.PL\\Mediplus.PL.csproj|solutionrelative:mediplus.pl\\areas\\admin\\views\\appointment\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06C31CD-50C8-4CB0-9063-3F82D8F12F9B}|Mediplus.PL\\Mediplus.PL.csproj|c:\\users\\user\\desktop\\ab205\\hometaskmvc\\mediplus\\mediplus.pl\\areas\\admin\\views\\hospital\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F06C31CD-50C8-4CB0-9063-3F82D8F12F9B}|Mediplus.PL\\Mediplus.PL.csproj|solutionrelative:mediplus.pl\\areas\\admin\\views\\hospital\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F06C31CD-50C8-4CB0-9063-3F82D8F12F9B}|Mediplus.PL\\Mediplus.PL.csproj|c:\\users\\user\\desktop\\ab205\\hometaskmvc\\mediplus\\mediplus.pl\\areas\\admin\\views\\hospital\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F06C31CD-50C8-4CB0-9063-3F82D8F12F9B}|Mediplus.PL\\Mediplus.PL.csproj|solutionrelative:mediplus.pl\\areas\\admin\\views\\hospital\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,97 +42,110 @@
       "DocumentGroups": [
         {
           "DockedWidth": 397,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PatientController.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Mediplus\\Mediplus.PL\\Areas\\Admin\\Controllers\\PatientController.cs",
-              "RelativeDocumentMoniker": "Mediplus.PL\\Areas\\Admin\\Controllers\\PatientController.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Mediplus\\Mediplus.PL\\Areas\\Admin\\Controllers\\PatientController.cs",
-              "RelativeToolTip": "Mediplus.PL\\Areas\\Admin\\Controllers\\PatientController.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAqwGwAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T14:52:59.225Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Mediplus\\Mediplus.PL\\Areas\\Admin\\Views\\Patient\\Details.cshtml",
-              "RelativeDocumentMoniker": "Mediplus.PL\\Areas\\Admin\\Views\\Patient\\Details.cshtml",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Mediplus\\Mediplus.PL\\Areas\\Admin\\Views\\Patient\\Details.cshtml",
-              "RelativeToolTip": "Mediplus.PL\\Areas\\Admin\\Views\\Patient\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-01T14:52:40.354Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DoctorController.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Mediplus\\Mediplus.PL\\Areas\\Admin\\Controllers\\DoctorController.cs",
-              "RelativeDocumentMoniker": "Mediplus.PL\\Areas\\Admin\\Controllers\\DoctorController.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Mediplus\\Mediplus.PL\\Areas\\Admin\\Controllers\\DoctorController.cs",
-              "RelativeToolTip": "Mediplus.PL\\Areas\\Admin\\Controllers\\DoctorController.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAswG4AAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T14:52:51.512Z",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Mediplus\\Mediplus.PL\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Mediplus.PL\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Mediplus\\Mediplus.PL\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Mediplus.PL\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAvwFcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-03T22:47:59.107Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Mediplus\\Mediplus.PL\\Areas\\Admin\\Views\\Doctor\\Details.cshtml",
-              "RelativeDocumentMoniker": "Mediplus.PL\\Areas\\Admin\\Views\\Doctor\\Details.cshtml",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Mediplus\\Mediplus.PL\\Areas\\Admin\\Views\\Doctor\\Details.cshtml",
-              "RelativeToolTip": "Mediplus.PL\\Areas\\Admin\\Views\\Doctor\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAASAAAAAAAAAA==",
+              "Title": "AppointmentController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Mediplus\\Mediplus.PL\\Areas\\Admin\\Controllers\\AppointmentController.cs",
+              "RelativeDocumentMoniker": "Mediplus.PL\\Areas\\Admin\\Controllers\\AppointmentController.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Mediplus\\Mediplus.PL\\Areas\\Admin\\Controllers\\AppointmentController.cs",
+              "RelativeToolTip": "Mediplus.PL\\Areas\\Admin\\Controllers\\AppointmentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T22:42:36.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BaseService.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Mediplus\\Mediplus.BL\\Services\\Concretes\\BaseService.cs",
+              "RelativeDocumentMoniker": "Mediplus.BL\\Services\\Concretes\\BaseService.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Mediplus\\Mediplus.BL\\Services\\Concretes\\BaseService.cs",
+              "RelativeToolTip": "Mediplus.BL\\Services\\Concretes\\BaseService.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAowD0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T21:54:32.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Mediplus\\Mediplus.PL\\Areas\\Admin\\Views\\Appointment\\Create.cshtml",
+              "RelativeDocumentMoniker": "Mediplus.PL\\Areas\\Admin\\Views\\Appointment\\Create.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Mediplus\\Mediplus.PL\\Areas\\Admin\\Views\\Appointment\\Create.cshtml",
+              "RelativeToolTip": "Mediplus.PL\\Areas\\Admin\\Views\\Appointment\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-01T14:52:37.134Z",
+              "WhenOpened": "2024-12-03T21:31:56.47Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Update.cshtml",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Mediplus\\Mediplus.PL\\Areas\\Admin\\Views\\Appointment\\Update.cshtml",
-              "RelativeDocumentMoniker": "Mediplus.PL\\Areas\\Admin\\Views\\Appointment\\Update.cshtml",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Mediplus\\Mediplus.PL\\Areas\\Admin\\Views\\Appointment\\Update.cshtml",
-              "RelativeToolTip": "Mediplus.PL\\Areas\\Admin\\Views\\Appointment\\Update.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Mediplus\\Mediplus.PL\\Areas\\Admin\\Views\\Hospital\\Update.cshtml",
+              "RelativeDocumentMoniker": "Mediplus.PL\\Areas\\Admin\\Views\\Hospital\\Update.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Mediplus\\Mediplus.PL\\Areas\\Admin\\Views\\Hospital\\Update.cshtml",
+              "RelativeToolTip": "Mediplus.PL\\Areas\\Admin\\Views\\Hospital\\Update.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-03T21:30:20.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Mediplus\\Mediplus.PL\\Areas\\Admin\\Views\\Hospital\\Details.cshtml",
+              "RelativeDocumentMoniker": "Mediplus.PL\\Areas\\Admin\\Views\\Hospital\\Details.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Mediplus\\Mediplus.PL\\Areas\\Admin\\Views\\Hospital\\Details.cshtml",
+              "RelativeToolTip": "Mediplus.PL\\Areas\\Admin\\Views\\Hospital\\Details.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-01T14:41:52.741Z",
+              "WhenOpened": "2024-12-03T21:17:35.15Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AppointmentController.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Mediplus\\Mediplus.PL\\Areas\\Admin\\Controllers\\AppointmentController.cs",
-              "RelativeDocumentMoniker": "Mediplus.PL\\Areas\\Admin\\Controllers\\AppointmentController.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Mediplus\\Mediplus.PL\\Areas\\Admin\\Controllers\\AppointmentController.cs",
-              "RelativeToolTip": "Mediplus.PL\\Areas\\Admin\\Controllers\\AppointmentController.cs",
-              "ViewState": "AgIAAJEAAAAAAAAAAAAjwHwAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T14:06:18.648Z",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Mediplus\\Mediplus.PL\\Areas\\Admin\\Views\\Hospital\\Index.cshtml",
+              "RelativeDocumentMoniker": "Mediplus.PL\\Areas\\Admin\\Views\\Hospital\\Index.cshtml",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Mediplus\\Mediplus.PL\\Areas\\Admin\\Views\\Hospital\\Index.cshtml",
+              "RelativeToolTip": "Mediplus.PL\\Areas\\Admin\\Views\\Hospital\\Index.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-03T20:14:20.374Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AppointmentService.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Mediplus\\Mediplus.BL\\Services\\Concretes\\AppointmentService.cs",
-              "RelativeDocumentMoniker": "Mediplus.BL\\Services\\Concretes\\AppointmentService.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Mediplus\\Mediplus.BL\\Services\\Concretes\\AppointmentService.cs",
-              "RelativeToolTip": "Mediplus.BL\\Services\\Concretes\\AppointmentService.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAswCMAAAAfAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "DoctorController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Mediplus\\Mediplus.PL\\Areas\\Admin\\Controllers\\DoctorController.cs",
+              "RelativeDocumentMoniker": "Mediplus.PL\\Areas\\Admin\\Controllers\\DoctorController.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Mediplus\\Mediplus.PL\\Areas\\Admin\\Controllers\\DoctorController.cs",
+              "RelativeToolTip": "Mediplus.PL\\Areas\\Admin\\Controllers\\DoctorController.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAnwHMAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T14:07:00.169Z",
+              "WhenOpened": "2024-12-03T20:06:00.579Z",
               "EditorCaption": ""
             }
           ]

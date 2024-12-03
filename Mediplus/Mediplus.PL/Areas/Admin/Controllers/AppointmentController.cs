@@ -3,7 +3,7 @@ using Mediplus.BL.DTOs.DoctorDTOs;
 using Mediplus.BL.DTOs.PatientDTOs;
 using Mediplus.BL.Services.Abstractions;
 using Mediplus.DAL.Models;
-using Mediplus.PL.Areas.Admin.ViewModels.Appointment;
+using Mediplus.PL.Areas.Admin.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Mediplus.PL.Areas.Admin.Controllers;
