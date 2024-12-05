@@ -1,5 +1,4 @@
-﻿@using Inance.DTOs.ServiceDTOs
-@model IEnumerable<GetServiceDto>
+﻿@model IEnumerable<Service>
 
 <!-- Begin Page Content -->
 <div class="container-fluid">
@@ -23,7 +22,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach (GetServiceDto service in Model)
+                        @foreach (Service service in Model)
                         {
                             <tr>
                                 <td>@service.Id</td>

@@ -1,4 +1,4 @@
-﻿using Inance.Enums;
+﻿using Inance.Utilities;
 using Inance.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;

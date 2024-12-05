@@ -1,17 +1,27 @@
 ﻿@using Inance.DTOs.ServiceDTOs
-@model GetServiceDto
+@model CreateServiceDto
 
-<form asp-action=@(Model == null ? "Create" : "Update") class="container" method="POST">
-    <h2 class="my-4">@(Model == null ? "Add" : "Update") Service</h2>
+<form asp-action="Create" enctype="multipart/form-data" class="container" method="POST">
+    <h2 class="my-4">Add Service</h2>
     <div class="mb-3">
-        <label class="form-label" asp-for="Title">Title</label>
+        <label class="form-label" asp-for="Title"></label>
         <input class="form-control" asp-for="Title" />
         <span class="text-danger" asp-validation-for="Title"></span>
     </div>
     <div class="mb-3">
-        <label class="form-label" asp-for="Description">Description</label>
+        <label class="form-label" asp-for="Description"></label>
         <input class="form-control" asp-for="Description" />
         <span class="text-danger" asp-validation-for="Description"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="Thumbnail"></label>
+        <input class="form-control" asp-for="Thumbnail" />
+        <span class="text-danger" asp-validation-for="Thumbnail"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="Photos"></label>
+        <input class="form-control" asp-for="Photos" />
+        <span class="text-danger" asp-validation-for="Photos"></span>
     </div>
     <div class="mb-3">
         <input class="form-check-inline" asp-for="IsActive" />

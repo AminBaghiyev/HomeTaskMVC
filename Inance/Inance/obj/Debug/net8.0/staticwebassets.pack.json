@@ -7517,6 +7517,30 @@
       "PackagePath": "staticwebassets\\js\\jquery-3.4.1.min.js"
     },
     {
+      "Id": "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Inance\\Inance\\wwwroot\\uploads\\serviceImages\\06847396-c5de-4958-898a-8c0e5e3a49bcmake.svg",
+      "PackagePath": "staticwebassets\\uploads\\serviceImages\\06847396-c5de-4958-898a-8c0e5e3a49bcmake.svg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Inance\\Inance\\wwwroot\\uploads\\serviceImages\\0d24b854-d86c-4b2c-9a61-35e21ec227a4Three-Dimensional Shapes_ Cube.png",
+      "PackagePath": "staticwebassets\\uploads\\serviceImages\\0d24b854-d86c-4b2c-9a61-35e21ec227a4Three-Dimensional Shapes_ Cube.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Inance\\Inance\\wwwroot\\uploads\\serviceImages\\32cbd763-adf5-43ff-8997-a75cf90d755dWhat is Bitcoin_.png",
+      "PackagePath": "staticwebassets\\uploads\\serviceImages\\32cbd763-adf5-43ff-8997-a75cf90d755dWhat is Bitcoin_.png"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Inance\\Inance\\wwwroot\\uploads\\serviceImages\\34319cc0-c1ab-4be8-a412-46fd54b7df2dmake.svg",
+      "PackagePath": "staticwebassets\\uploads\\serviceImages\\34319cc0-c1ab-4be8-a412-46fd54b7df2dmake.svg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Inance\\Inance\\wwwroot\\uploads\\serviceImages\\5212fe17-7441-44c8-b47c-1f9c6958e4f3team.jpg",
+      "PackagePath": "staticwebassets\\uploads\\serviceImages\\5212fe17-7441-44c8-b47c-1f9c6958e4f3team.jpg"
+    },
+    {
+      "Id": "C:\\Users\\USER\\Desktop\\AB205\\HomeTaskMVC\\Inance\\Inance\\wwwroot\\uploads\\serviceImages\\8a233aff-ef93-4a07-9433-42875357723fCircles_ Radius, Diameter, Cir.png",
+      "PackagePath": "staticwebassets\\uploads\\serviceImages\\8a233aff-ef93-4a07-9433-42875357723fCircles_ Radius, Diameter, Cir.png"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Inance.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
